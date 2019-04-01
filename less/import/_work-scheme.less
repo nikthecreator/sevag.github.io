@@ -1,0 +1,179 @@
+.wrapp-workscheme {
+    margin-top: 50px;
+    width: 100%;
+    height: 100%;
+    background-color: #f5f5f5;
+    &-heading {
+        width: 1140px;
+        height: 140px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+}
+
+.workscheme {
+    width: 1140px;
+    height: 500px;
+    margin: auto;
+    &-card {
+        width: 260px;
+        height: 320px;
+        background-color: #fff;
+        border-radius: 3px;
+        box-shadow: 0 0 10px 0 rgba(212, 219, 225, 0.5);
+        padding: 20px;
+        &-icon {
+            width: 100%;
+            height: 40px;
+            margin-top: 15px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        &-heading {
+            width: 100%;
+            height: 30px;
+            margin-top: 30px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        &-text {
+            width: 100%;
+            margin-top: 20px;
+        }
+        &-footer {
+            width: 100%;
+            height: 20px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-top: 20px;
+        }
+        &-button {
+            width: 100%;
+            height: 40px;
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .workscheme-btn-outline {
+            width: 225px;
+            height: 40px;
+            background-color: #fff;
+            border: 1px solid #d4dbe1;
+            border-radius: 3px;
+            font-family: OpenSans;
+            transition: all 0.2s;
+            &:hover{ 
+                cursor: pointer;
+                background-color: #f5f5f5;
+            }
+            &:focus {
+                outline: none;
+            }
+        }
+        .workscheme-btn-blue {
+            width: 225px;
+            height: 40px;
+            background-color: @blue;
+            border-radius: 3px;
+            border: none;
+            transition: all 0.2s;
+            &:hover{ 
+                cursor: pointer;
+                background-color: rgb(14, 63, 177);
+            }
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}
+
+.card-button {
+    height: 385px;
+}
+
+// Media 
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    .wrapp-workscheme-heading {
+        width: 1140px;
+    }
+    .workscheme {
+        width: 1140px;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .wrapp-workscheme-heading {
+        width: 960px;
+    }
+    .workscheme {
+        width: 960px;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .wrapp-workscheme-heading {
+        width: 750px;
+        text-align: center;
+    }
+    .workscheme {
+        width: 750px;
+        height: 800px;
+        &-card {
+            margin: auto;
+        }
+    }
+    
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .wrapp-workscheme-heading {
+        width: 500px;
+        justify-content: center;
+    }
+    .workscheme {
+        width: 500px;
+        height: 1600px;
+        &-card {
+            margin: auto;
+        }
+    }
+    .arow-rotate {
+        transform: rotate(90deg);
+    }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+    .wrapp-workscheme-heading {
+        width: 300px;
+        justify-content: center;
+    }
+    .workscheme {
+        margin-top: 0;
+        width: 300px;
+        height: 1600px;
+        &-card {
+            margin: auto;
+        }
+    }
+    .arow-rotate {
+        transform: rotate(90deg);
+    }
+}
+
+
+
+
+

@@ -1,0 +1,233 @@
+//Mixins 
+.headingMontserrat () {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: @title;
+}
+.baseTextMontserrat () {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+.baseTextOpenSans () {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: @base-text;
+}
+
+.title {
+    .headingMontserrat();
+    &-page {
+        .headingMontserrat();
+        font-size: 18px;
+    }
+    &-footer {
+        .headingMontserrat();
+        font-size: 18px;
+    }
+    &-product {
+        .headingMontserrat();
+        &-furniture {
+            .headingMontserrat();
+            color: #fff;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 1.5; 
+        }
+        &-kitchen {
+            .headingMontserrat();
+            font-weight: 500;
+            font-size: 24px;
+            color: #333333;
+            text-align: left;
+        }
+    }
+    &-uf {
+        .headingMontserrat();
+        font-weight: 500;
+        font-size: 24px;
+        color: @title;
+        margin-top: 40px;
+    }
+    &-accordion {
+        .baseTextOpenSans();
+        font-size: 20px;
+    }
+    &-card {
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 500;
+        color: #515c6b;
+    }
+    &-raskroi {
+        .headingMontserrat();
+        font-weight: 400;
+        color: #fff;
+    }
+    &-construct {
+        .headingMontserrat();
+        font-weight: 500;
+    }
+    &-kitchen {
+        .headingMontserrat();
+        font-weight: 400;
+        color: #fff;
+    }
+    &-slider {
+        .headingMontserrat();
+        color: #fff;
+        font-weight: 400;
+        font-size: 28px;
+        &-black {
+            .headingMontserrat();    
+            color: @title;
+            font-weight: 500;
+            font-size: 28px;
+        }
+    }
+}
+
+.subTitle-product {
+    .baseTextOpenSans();
+    font-size: 18px;
+    color: @yellow;
+    padding-top: 12px;
+}
+.link-footer {
+    .baseTextOpenSans();
+    &:hover {
+        color: @blue;
+        text-decoration: none;
+    }
+}
+.link-number {
+    .baseTextOpenSans();
+    font-weight: 600;
+    color: @title;
+}
+.link-works {
+    .baseTextMontserrat();
+    font-size: 18px;
+    color: #515c6b;
+    text-align: left;
+}
+.text-company {
+    .baseTextMontserrat();
+    font-weight: 500;
+    font-size: 16px;
+}
+.text-card {
+    .baseTextOpenSans();
+}
+.text-footer {
+    .baseTextOpenSans();
+}
+.text-mons {
+    .baseTextMontserrat();
+    font-weight: 500;
+    font-size: 18px;
+    &-white {
+        .baseTextMontserrat();
+        font-weight: 500;
+        font-size: 18px;
+        color: #fff;
+    }
+    &-whiteSlide {
+        .baseTextMontserrat();
+        font-weight: 500;
+        color: #ffffff;
+    }
+    &-yellow {
+        .baseTextMontserrat();
+        font-weight: 500;
+        font-size: 18px;
+        color: @yellow;   
+    }
+    &-menu {
+        .baseTextMontserrat();
+        font-weight: 400;
+        font-size: 16px;
+        color: #fff;
+    }
+    &-modal {
+        .baseTextMontserrat();
+        font-weight: 500;
+        font-size: 20px;
+        color: @title;
+    }
+}
+.text-sans {
+    .baseTextOpenSans();
+    &-bold {
+        font-weight: 600;
+    }
+    &-nav {
+        .baseTextOpenSans();
+        font-size: 16px;
+        margin-right: 5px;
+        &:hover {
+            color: @blue;
+        }
+    }
+    &-white {
+        .baseTextOpenSans();
+        color: #fff;
+    }
+    &-navSlide {
+        .baseTextOpenSans();
+    }
+    &-drop {
+        .baseTextOpenSans();
+        font-size: 14px;
+    }
+    &-item {
+        .baseTextOpenSans();
+        font-size: 18px;
+        font-weight: 600;
+        color: @blue;
+    }
+    &-callBack {
+        .baseTextOpenSans();
+        font-size: 18px;
+    }
+}
+
+.text-slider-header {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+.text-slider-header__black {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: @base-text;
+}
+
+
+.product-link {
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.number-link {
+    font-family: 'Open Ssns', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: @yellow;
+    &:hover {
+        text-decoration: none;
+        color: @yellow;
+    }
+}
+
+@media (max-width: 575.98px) { 
+    .text-sans-item {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,228 @@
+.wrapp-product {
+    width: 100%;
+    height: 100%;
+}
+.product {
+    margin: auto;
+    width: 1140px;
+    height: 900px;
+    &-title {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+}
+
+// greed cards 
+.furniture {
+    transition: all 0.2s;
+    width: 100%;
+    height: 500px;
+    background-color: @blue;
+    border-radius: 3px;
+    padding: 30px;
+    &-text {
+        padding: 50px;
+        padding-top: 10px;
+        width: 100%;
+        height: 60%;
+    }
+    &-img {
+        width: 100%;
+        height: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &:hover {
+        cursor: pointer;
+        opacity: 0.8;
+    }
+}
+.construct {
+    transition: all 0.2s;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    padding: 30px;
+    background-image: url(/img/product-img/contruct.png);
+    background-size: cover;
+    &:hover {
+        cursor: pointer;
+        opacity: 0.8;
+    }
+}
+.uf {
+    transition: all 0.2s;
+    width: 100%;
+    height: 220px;
+    background-color: #ffffff;
+    border: 1px solid @borders;
+    border-radius: 3px;
+    margin-bottom: 30px;
+    background-image: url(/img/product-img/maxresdefault.jpg);
+        background-size: cover;
+    &-header {
+        width: 100%;
+        height: 220px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    &:hover {
+        cursor: pointer;
+        opacity: 0.8;
+    }
+}
+.raskroi {
+    transition: all 0.2s;
+    width: 100%;
+    height: 250px;
+    background-color: #FFA726;
+    border-radius: 3px;
+    &-header {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+        color: #fff;
+    }
+    &-img {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+    &:hover {
+        cursor: pointer;
+        opacity: 0.8;
+    } 
+}
+.kitchen {
+    transition: all 0.2s;
+    width: 100%;
+    height: 250px;
+    background-image: url(/img/product-img/kitchen.png);
+    background-size: cover;
+    margin-top: 30px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    &:hover {
+        cursor: pointer;
+        opacity: 0.8;
+    }
+}
+
+//responsive image
+.adaptive {
+    transition: all 0.2s;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 1200px) {
+    .product {
+        width: 1140px;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+   .product {
+       width: 960px;
+   }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .product {
+        width: 750px;
+        height: 1700px;
+        &-title {
+            justify-content: center;
+        }
+    }
+    .furniture,
+    .construct,
+    .uf,
+    .raskroi,
+    .kitchen {
+        width: 600px;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    .construct {
+        height: 250px;
+    }
+ }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .product {
+        width: 500px;
+        height: 1700px;
+        &-title {
+            justify-content: center;
+        }
+    }
+    .furniture,
+    .construct,
+    .uf,
+    .raskroi,
+    .kitchen {
+        width: 400px;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    .construct {
+        height: 200px;
+    }
+ }
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+    .product {
+        width: 300px;
+        height: 1700px;
+        &-title {
+            justify-content: center;
+        }
+    }
+    .furniture,
+    .construct,
+    .uf,
+    .raskroi,
+    .kitchen {
+        width: 280px;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    .construct {
+        height: 200px;
+    }
+ }
+
+
+
+
+
+
